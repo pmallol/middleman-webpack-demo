@@ -5,6 +5,9 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# Livereload
+activate :livereload, host: '0.0.0.0', port: '1234'
+
 # Webpack
 activate :external_pipeline,
   name: :webpack,
