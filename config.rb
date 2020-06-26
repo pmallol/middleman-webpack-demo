@@ -58,6 +58,8 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
+  # Generate relative paths to the repo when deploying to GitHub Pages
+  config[:http_prefix] = '/middleman-webpack-demo'
   config[:css_dir] = ""
   config[:js_dir] = ""
   # activate :minify_css
