@@ -5,6 +5,20 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# Webpack
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? 
+    "./node_modules/webpack/bin/webpack.js --bail -p" :
+    "./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
+  source: ".tmp/dist",
+  latency: 1
+
+configure :development do
+  config[:css_dir] = ".tmp/dist"
+  config[:js_dir] = ".tmp/dist"
+end
+  
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
