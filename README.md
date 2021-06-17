@@ -1,6 +1,8 @@
 # Middleman app using Webpack
 
-Plus, it's dockerized and configured to be continuously deployed to GitHub Pages as a bonus!
+🚀 It's dockerized and configured to be continuously deployed to GitHub Pages!
+
+🤓 Read my [step by step guide](https://dev.to/pmallol/add-webpack-to-a-middleman-app-3npb) in dev.to
 
 ![](/screenshots/screenshot.png)
 
